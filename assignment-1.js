@@ -12,23 +12,32 @@ Console log the last item in the array.
 Create another variable named car and assign an empty object to it.
 Give the object a property called colour and assign it the value of "black". */
 
-function numbers(start, end) {
-  let i = start || 0;
-  let z = end || 9;
 
+
+// This function inputs a start and end integer and pushes all the integer between into an array and returns the array into the variable invoking it.
+function createIntegerArray(start, end) {
+  let array = new Array(); //Create empty array
+  let i = start || 0; //Create scoped variable i, defaults to 0 if no custom intiger entered
+  let z = end || 9; //Create scoped variable z, defaults to 9 if no custom sintiger entered
+
+  // Loop from start to end and push the index number into array as a intiger
   for (i; i <= z; i++){
-      /* your code here */
+    array.push(i);
   }
 
-  console.log(/* your code here */);
+  //returns the array as the result of the function
+  return array;
 }
 
+// This function runs upon loading and is self invoking
 (function () {
-  let car = new Object();
 
-  car.colour = 'black';
+  let car = new Object(); // Create empty car object
+  car.color = 'black'; // Add an object value for the color key
+  // Insert text string of object into the getElementById
+  document.getElementById("assignment-1__car").textContent = car.color;
 
-  console.log (car.colour);
+  let numbers = createIntegerArray(); // Return function result into var
+  // Insert array into element by converting it into a string
+  document.getElementById("assignment-1__numbers").textContent = String(numbers);
 })();
-
-numbers();
