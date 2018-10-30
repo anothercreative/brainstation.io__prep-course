@@ -32,12 +32,12 @@ function createIntegerArray(start, end) {
 // This function runs upon loading and is self invoking
 (function () {
 
-  let car = new Object(); // Create empty car object
-  car.color = 'black'; // Add an object value for the color key
+  let car = {color:'black'}; // Create the car object and add a value for the color key
+  let color = car.color.split('');
   // Insert text string of object into the getElementById
-  document.getElementById("assignment-1__car").textContent = car.color;
+  stringAnimationLoop('#assignment-1__car', color, 500);
 
   let numbers = createIntegerArray(); // Return function result into var
   // Insert array into element by converting it into a string
-  document.getElementById("assignment-1__numbers").textContent = String(numbers);
+  stringAnimationLoop('#assignment-1__numbers', numbers, 500);
 })();
