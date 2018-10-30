@@ -66,10 +66,8 @@ p {
 /* Header Section */
 .bsio-section__header {
   width: 100%;
-  /* background-color: rgba(16, 29, 66, 0.333); */
   padding: 40px 0 55px;
   color: #fff;
-  margin-bottom: 60px;
   position: relative;
   overflow: hidden;
 }
@@ -134,7 +132,8 @@ p {
 
 /* Assignment Section */
 .bsio-section__assignments {
-  margin-bottom: 60px;
+  padding: 60px 0;
+  background: #f9fafa;
 }
 
 .bsio-section__assignments .bsio-fullwidth__container {
@@ -159,6 +158,7 @@ p {
   padding: 15px 60px 50px;
   margin: 20px;
   border-top: 8px solid #1358db;
+  background: #fff;
 }
 
 .bsio-section__assignments .bsio-fullwidth__container .bsio-card .btn {
