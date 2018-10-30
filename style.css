@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-body {
+html, body {
   overflow-x: hidden;
   font-size: 16px;
   padding: 0;
@@ -13,6 +13,10 @@ body {
   font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
 }
 
 div, article, nav, section {
@@ -39,12 +43,12 @@ p {
   color: #fff;
   display: inline-flex;
   flex-direction: row;
-  font-size: .9rem;
+  font-size: .9em;
   font-stretch: normal;
   font-style: normal;
   font-weight: 700;
   letter-spacing: normal;
-  line-height: 1.1rem;
+  line-height: 1.1em;
   padding: 15px 24px;
   text-align: center;
   transition: background-color .15s cubic-bezier(.4,0,.2,1);
@@ -108,7 +112,6 @@ p {
   font-size: 2.929em;
   font-weight: 700;
   letter-spacing: -.1px;
-  line-height: 2.866rem;
   margin-bottom: 20px;
 }
 
@@ -173,7 +176,7 @@ p {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: .5px;
-  line-height: 1.714rem;
+  line-height: 1.714em;
 }
 
 .bsio-section__assignments .bsio-fullwidth__container .bsio-card > ul {
@@ -211,12 +214,44 @@ p {
   word-break: normal;
 }
 
-.bsio-section__assignments .bsio-fullwidth__container .bsio-card.assignment-3 .btn {
-  opacity: 0;
-  cursor: default;
-}
-
 .bsio-section__assignments .bsio-fullwidth__container .bsio-card.assignment-3 span {
   margin: 30px 0;
   font-weight: 600;
+}
+
+/* Responsize Code */
+@media only screen and (max-width: 640px) {
+  .bsio-fullwidth__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bsio-section__header .header__video {
+    transform: translate(-50%, -50%);
+  }
+  .bsio-section__header .bsio-fullwidth__container {
+    flex-direction: column;
+    justify-content: left;
+    height: auto;
+  }
+  .bsio-section__header .bsio-fullwidth__container h1 {
+    line-height: 1em;
+  }
+  .bsio-section__header .bsio-fullwidth__container h2 {
+    font-size: 1em;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  .bsio-section__assignments .bsio-fullwidth__container {
+    flex-direction: column;
+  }
+  .bsio-section__assignments .bsio-fullwidth__container .bsio-card {
+    max-width: 100%;
+    width: auto;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .bsio-section__in-closing .bsio-fullwidth__container {
+    padding: 0 20%;
+    text-align: center;
+  }
 }
