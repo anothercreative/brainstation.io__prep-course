@@ -220,13 +220,13 @@ p {
 }
 
 /* Responsize Code */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1160px) {
   .bsio-fullwidth__container {
     padding-left: 20px;
     padding-right: 20px;
   }
   .bsio-section__header .header__video {
-    transform: translate(-50%, -50%);
+    transform: translate(-35%, -50%);
   }
   .bsio-section__header .bsio-fullwidth__container {
     flex-direction: column;
