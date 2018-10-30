@@ -9,7 +9,7 @@ function pyramidConsole(height) {
     value = ""; //sets an empty value to turn value into string
     if (i == 0) { //if its the first array value
       value += "#\n"; //put a # and a json line break
-    } else  //Otherwsie
+    } else { //Otherwsie
       for (let j=0; j <= i; j++) { //Run a loop for each time a function is run
         value += "#"; //Add a hash to the previous iteration of the variable
         if (j == i) { //If its the last iteration
