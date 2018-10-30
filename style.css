@@ -1,0 +1,167 @@
+/* Global CSS */
+.bsio-fullwidth__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+div, article, nav, section {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn {
+  align-items: center;
+  background-color: #1358db;
+  border: 1px solid #1358db;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-flex;
+  flex-direction: row;
+  font-size: .9rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.1rem;
+  padding: 15px 24px;
+  text-align: center;
+  transition: background-color .15s cubic-bezier(.4,0,.2,1);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #003fc2;
+}
+
+/* Header Section */
+.bsio-section__header {
+  width: 100%;
+  background-color: #101d42;
+  padding: 40px 0 55px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.bsio-section__header .bsio-fullwidth__container .btn {
+    padding-left: 68px;
+    padding-right: 68px;
+}
+
+.bsio-section__header .bsio-fullwidth__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bsio-section__header .bsio-fullwidth__container > div {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.bsio-section__header .bsio-fullwidth__container > div:last-of-type {
+  display: flex;
+  flex-grow: 0;
+  justify-content: flex-end;
+}
+
+.bsio-section__header .bsio-fullwidth__container h1 {
+  font-size: 2.429em;
+  font-weight: 600;
+  letter-spacing: -.1px;
+  line-height: 2.866rem;
+  margin-bottom: 16px;
+}
+
+.bsio-section__header .bsio-fullwidth__container svg#bsio-svg__header-bg {
+  color: rgba(255,255,255,.25);
+  position: absolute;
+  bottom: -145px;
+  right: -280px;
+  width: 500px;
+}
+
+/* Assignment Section */
+.bsio-section__assignments .bsio-fullwidth__container {
+  display: flex
+}
+
+.bsio-section__assignments .bsio-fullwidth__container .bsio-card:first-of-type {
+  margin-left: 0;
+}
+
+.bsio-section__assignments .bsio-fullwidth__container .bsio-card:last-of-type {
+  margin-right: 0;
+}
+
+.bsio-section__assignments .bsio-fullwidth__container .bsio-card {
+  width: calc(33% - 40px);
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 18px 0 rgba(0,0,0,.08);
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px 50px;
+  margin: 20px;
+  border-top: 8px solid #1358db;
+}
+
+.bsio-section__assignments .bsio-fullwidth__container .bsio-card h5 {
+  margin-bottom: 36px;
+  text-transform: uppercase;
+  font-size: .77em;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: .5px;
+  line-height: 1.714rem;
+}
+
+.bsio-section__assignments .bsio-fullwidth__container .bsio-card > ul {
+  margin-top: 50px;
+}
+
+.bsio-section__assignments .bsio-fullwidth__container .bsio-card > ul > li {
+  font-weight: 700;
+}
+
+.bsio-section__assignments .bsio-fullwidth__container .bsio-card > ul > li > p {
+  display: inline-block;
+  position: relative;
+}
+
+.bsio-section__assignments .bsio-fullwidth__container .bsio-card > ul > li > p:after {
+  background-color: #ffcf00;
+  bottom: -4px;
+  content: " ";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.bsio-section__assignments .bsio-fullwidth__container .bsio-card > ul > li > span {
+  display: inline-block;
+  min-width: 100px;
+  margin-left: 10px;
+  color: grey;
+}

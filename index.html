@@ -2,24 +2,45 @@
 <html>
   <head>
     <title>Brainstation.io Prep Course</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
   </head>
-
   <body>
-    <div class="bsio__header-section">
-      <h1>Brainstation.io Prep Course</h1>
-      <h4>By Andrew Nelson</h4>
-      <ul>
-        <li>Assignment 1:
-          <ul>
-            <li>Numbers array: <span id="assignment-1__numbers"></span></li>
-            <li>Car color: <span id="assignment-1__car"></span></li>
-          </ul>
-        </li>
-        <li>Assignment 2:</li>
-        <li>Assignment 3:</li>
-      </ul>
-    </div>
-
+    <article class="bsio-section__header">
+      <div class="bsio-fullwidth__container">
+        <div class="bsio-section__header-col-1">
+          <h1>Brainstation.io Prep Course</h1>
+          <h4>By Andrew Nelson</h4>
+        </div>
+        <div class="bsio-section__header-col-2">
+          <a class="btn" target="_blank" href="https://github.com/anothercreative/brainstation.io__prep-course.git">View on GitHub</a>
+        </div>
+      </div>
+    </article>
+    <section class="bsio-section__assignments">
+      <div class="bsio-fullwidth__container">
+          <article class="bsio-card">
+            <h5>Assignment 1</h5>
+            <a class="btn" target="_blank" href="https://github.com/anothercreative/brainstation.io__prep-course/blob/master/assignment-1.js">View Source of Assignment 1</a>
+            <ul>
+              <li><p>Numbers:</p> <span id="assignment-1__numbers"></span></li>
+              <li><p>Car Color:</p> <span id="assignment-1__car"></span></li>
+            </ul>
+          </article>
+          <article class="bsio-card">
+            <h5>Assignment 2</h5>
+            <a class="btn" target="_blank" href="https://github.com/anothercreative/brainstation.io__prep-course/blob/master/assignment-2.js">View Source of Assignment 2</a>
+          </article>
+          <article class="bsio-card">
+            <h5>Assignment 3</h5>
+            <a class="btn" target="_blank" href="./assignment-3/resume.html">View Assignment 3</a>
+          </article>
+        </ul>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./another.common.js"></script>
     <script src="./assignment-1.js"></script>
+    <script src="./assignment-2.js"></script>
   </body>
 </html>
